@@ -1,0 +1,83 @@
+@charset="utf-8";
+
+html {
+	height: 100%;
+	width : 100%;
+}
+
+body {
+	height    : 100%;
+	width     : 100%;
+	overflow-y: scroll;
+}
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+img {
+	height: auto !important;
+	width : 100%;
+}
+
+tr, td, table {
+	border: none;
+}
+
+input {
+	margin: 0;
+}
+
+.informationContainer {
+	margin-top : 800px;
+	padding-top: 30px;
+	width      : 100%;
+}
+
+.formInput {
+	text-align: right;
+}
+
+#topContainer {
+	width : 100%;
+	min-height: 100%;
+}
+
+.errorContainer {
+	position        : fixed;
+	padding 	    : 12px 0 10px;
+	background-color: #d9534f;
+	text-align      : center;
+	color           : whitesmoke;
+	z-index 		: 999;
+}
+
+.closeErr, .closeErr:hover, .closeErr:active {
+	background: none;
+	border    : none;
+	color     : whitesmoke;
+	margin-top: 61px;
+	cursor    : pointer;
+	outline   : none;
+	padding   : 0;
+	margin    : -5px 15px;
+}
+
+.beerEmpty {
+	background-image: url('../media/empty.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 800px;
+	width:100%;
+}
+
+.beerFull {
+	background-image: url('../media/full.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 999;
+	width:100%;
+}

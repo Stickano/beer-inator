@@ -1,0 +1,249 @@
+@charset="utf-8";
+
+/*
+
+	This stylesheet will make some browser reset and general
+	adjustments that I usually do anyways.
+	2017, Henrik (Jeppesen@tutanota.com)
+
+ */
+
+html {
+	height: 100%;
+	width : 100%;
+}
+
+body {
+	height    : 100%;
+	width     : 100%;
+	overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+/* Reset all margin and padding */
+* {
+	margin : 0;
+	padding: 0;
+}
+
+/* Fix Image Sizes */
+img {
+	height: auto !important;
+	width : 100%;
+}
+
+/* Collapse table border */
+table, td {
+	border-collapse: collapse;
+}
+
+h1 {
+	line-height: 1.5;
+}
+
+form {
+	margin-bottom: 100px;
+}
+
+.scrapeTd {
+	width:180px; 
+	height:200px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+
+.graph-container {
+	box-sizing: border-box;
+	width: 850px;
+	height: 450px;
+	padding: 20px 15px 15px 15px;
+	margin: 15px auto 100px auto;
+	border: 1px solid #ddd;
+	background: #fff;
+	background: linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.graph-placeholder {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+/* From WebHelpers */
+.col-100 {
+  width: 100%; }
+
+.col-66 {
+  width: 66.7%; }
+
+.col-50 {
+  width: 50%; }
+
+.col-33 {
+  width: 33.3%; }
+
+.col-25 {
+  width: 25%; }
+
+* {
+  box-sizing: border-box; }
+
+.row:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix {
+  *zoom: 1;
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  padding: 1rem; }
+
+.right {
+  float: right; }
+
+button.leftbarButton {
+    border: none;
+    border-top: 1px solid rgba(204,204,204, .4);
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.leftbarButton {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid rgba(204,204,204, .4);
+    text-align: center;
+    height: 100px;
+    padding-top: 35px;
+    color: lightgrey;
+    font-size: 30px;
+}
+
+.leftbarButton:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.errorContainer {
+    position        : fixed;
+    padding         : 12px 0 10px;
+    text-align      : center;
+    color           : whitesmoke;
+    z-index         : 99;
+    width: 100%;
+}
+
+.closeErr, .closeErr:hover, .closeErr:active {
+    background: none;
+    border    : none;
+    color     : whitesmoke;
+    margin-top: 61px;
+    cursor    : pointer;
+    outline   : none;
+    padding   : 0;
+    margin    : 0 15px;
+}
+
+.settingLabel {
+    display: inline;
+}
+
+.settingValue {
+    text-decoration: none;
+    color: #6991ac;
+    font-weight: bold;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.settingButton {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.settingInput {
+  display: inline;
+  width: 40px;
+  border: none;
+  background-color: #f1f1f1;
+  outline: none;
+  color: #6991ac;
+  text-align: center;
+}
+
+#addProfileButton {
+  background: none; 
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+#addProfileCancel {
+  background: none; 
+  border: none;
+  cursor: pointer;
+  outline: none; 
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+.createProfileInput {
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: white;
+}
+
+.pwInput {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-top: 1px solid darkgrey;
+}
+
+.datepick {
+  padding: 6px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 10px 10px 10px 0;
+  border: 1px solid darkgrey;
+}
+
+.searchButton {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid darkgrey;
+  background-color: #6991ac;
+  color: white;
+}
