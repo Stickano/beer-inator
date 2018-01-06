@@ -25,7 +25,7 @@ echo'<body>';
     if ($session->isset('loggedId')){
         echo'<div style="position:fixed; z-index:999; background-color:#254c6a; left:0; top:0; bottom:0; width:100px;">';
             $borderTop = "none";
-            echo'<div class="leftBarButton" style="background-color:#33393b; position:relative;"><img style="margin-bottom:-5px;" src="media/beerinatorIcon.png"></div>';
+            echo'<div class="leftBarButton" style="background-color:#8C9440; border:none; position:relative;"><img style="margin-bottom:-5px;" src="media/beerinatorIcon.png"></div>';
             if ($session->get('loggedRole') == 2){
                 $borderTop = "1px solid rgba(204,204,204, .4)";
                 echo'<a href="?cms" class="leftbarButton" style="border-top:none;" title="Skift Instillinger"><i class="fa fa-cogs" aria-hidden="true"></i></a>';

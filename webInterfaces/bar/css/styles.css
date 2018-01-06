@@ -9,6 +9,8 @@ body {
 	height    : 100%;
 	width     : 100%;
 	overflow-y: scroll;
+	background-color: #373B41;
+	color: #f2f2f2;
 }
 
 * {
@@ -30,9 +32,16 @@ input {
 }
 
 .informationContainer {
-	margin-top : 800px;
+	margin-top : 600px;
 	padding-top: 30px;
 	width      : 100%;
+	text-align: center;
+}
+
+.changeAnchor {
+	color: rgba(255,255,255,.4);
+	text-decoration: none;
+	font-size: 40px;
 }
 
 .formInput {
@@ -65,19 +74,43 @@ input {
 }
 
 .beerEmpty {
-	background-image: url('../media/empty.jpg');
+	background-image: url('../media/glass.png');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	position: absolute;
-	height: 800px;
+	height: 600px;
 	width:100%;
+	z-index: 999;
 }
 
 .beerFull {
-	background-image: url('../media/full.jpg');
+	background-image: url('../media/beer.png');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	position: absolute;
-	z-index: 999;
 	width:100%;
+}
+
+.foam {
+	background-image: url('../media/foam.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 600px;
+	width:100%;
+	z-index: 9999;	
+}
+
+.percentageRuler {
+	position: absolute;
+	width: 20%;
+	margin-left: 20%;
+	border-bottom: 1px solid rgba(255,255,255,.4);
+	margin-top: 271px;
+	color: rgba(255,255,255,.4);
+}
+
+.rulerContent {
+	position: absolute;
+	bottom: 0;
 }

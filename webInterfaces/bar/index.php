@@ -13,7 +13,6 @@ echo'<body>';
     if ($singleton::$error){
         echo '<div class="errorContainer u-full-width">';
             echo '<b>'.$singleton::$error.'</b>';
-            echo '<button class="closeErr u-pull-right"><i class="fa fa-times" aria-hidden="true"></i></button>';
         echo '</div>';
     }
 

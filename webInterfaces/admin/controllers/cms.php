@@ -151,9 +151,9 @@ class CmsController{
         $pwHash = hash('sha256', $pw);
 
         $data = ['id' => $id, 'password' => $pwHash];
-        $this->curl->post($data);
+        $this->curl->put($data);
         $return = $this->curl->curl("http://easj-beerinator.azurewebsites.net/Service1.svc/profile/update/password/".$this->token);
-
+        
         if ($return != "NULL")
             $this->sessions->set('message', "OBS!: Adgangskoden er ændret til: ".$pw);
         else

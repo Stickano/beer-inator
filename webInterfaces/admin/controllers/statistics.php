@@ -73,6 +73,42 @@ class StatisticsController{
     public function getAllValues(){
         return $this->allValues;
     }
+
+    public function tester(){
+        foreach ($this->viewValues as $key => $value) {
+            $amount[$key] = $value['amount'];
+            $time[$key] = substr($value['dateTime'],0,8);
+        }
+        return array_multisort($time, SORT_ASC, $amount, SORT_DESC, $this->viewValues);
+
+
+        $ratingsInPosts = array
+        (
+        array("1",3),
+        array("2",5),
+        array("2",2),
+        array("5",2),
+        array("90",1),
+        array("5",6),
+        array("2",2),
+        );
+        $arr1 = array_column($ratingsInPosts, 0);
+        $p = array_count_values($arr1);
+        foreach($p as $key => $value)
+        {
+          $sum = 0;
+          for($i=0; $i < $value; $i++)
+          {
+            $pos = array_search($key, $arr1);
+            $sum += $ratingsInPosts[$pos][1];
+            unset($arr1[$pos]);
+            unset($ratingsInPosts[$pos]);
+          }
+          $re[] = array('"'.$key.'"',$sum/$value);
+        }
+        print_r($re);
+        
+    }
 }
 
 ?>

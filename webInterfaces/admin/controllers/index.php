@@ -49,6 +49,7 @@ class IndexController{
         
         $this->sessions->set('loggedId', $login['id']);
         $this->sessions->set('loggedRole', $login['role']);
+        $this->sessions->set('pwHash', $login['password']);
         if ($login['role'] == 2)
             header("location:?cms");
         header("lcoation:?buyer");

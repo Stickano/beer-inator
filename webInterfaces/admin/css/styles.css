@@ -149,7 +149,7 @@ button.leftbarButton {
 
 .errorContainer {
     position        : fixed;
-    padding         : 12px 0 10px;
+    padding         : 15px 0 12px;
     text-align      : center;
     color           : whitesmoke;
     z-index         : 99;

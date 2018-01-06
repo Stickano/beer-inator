@@ -14,6 +14,7 @@
     echo'<meta name="author" content="John Doe" />';
     echo'<meta name="robots" content="noindex, nofollow" />';
     echo'<meta name="viewport" content="width=device-width, initial-scale=0.8" />';
+    echo'<link rel="icon" href="media/fav.ico?v=1.1">';
 
     # JQuery
     echo'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>';

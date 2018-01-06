@@ -53,7 +53,8 @@ class IndexController{
      * @return int    Sets $currentPercentage;
      */
     private function calcValues(){
-        $this->currentPercentage = $this->currentValue / $this->maxValue * 100;
+        $calc                    = $this->currentValue / $this->maxValue * 100;
+        $this->currentPercentage = round($calc);
         self::convertPercentage();
     }
 
@@ -62,8 +63,8 @@ class IndexController{
      * @return     Sets $convertedPercentage
      */
     private function convertPercentage(){
-        $calc = $this->currentPercentage / 100;
-        $this->convertedPercentage =  800 * $calc;
+        $calc                      = $this->currentPercentage / 100;
+        $this->convertedPercentage = 330 * $calc;
     }
 
     /**
@@ -81,7 +82,7 @@ class IndexController{
      * @return int The calculated remaining height 
      */
     public function getRemainingHeight(){
-        return 800 - $this->convertedPercentage;
+        return 600 - $this->convertedPercentage;
     }
 
     /**
