@@ -31,9 +31,9 @@ In all 17 accessible methods through HTTP requests. In the short amount of time 
 &nbsp;
 
 ##### Have a look
-Feel free to try the live example: [CMS](https://sloa.dk/beerInator/admin) and [Bar](https://sloa.dk/beerInator/bar).
+~~Feel free to try the live example: [CMS](https://sloa.dk/beerInator/admin) and [Bar](https://sloa.dk/beerInator/bar).~~
 
-You can log in to the CMS with `mail@mail.mail` and the password is `hejhej`. I've disabled the feature to add and delete new profiles so the amount of havoc you can create in the CMS is minimal, though you're a nice person so you wouldn't be thinking that anyways. Right? Guys..?
+~~You can log in to the CMS with `mail@mail.mail` and the password is `hejhej`. I've disabled the feature to add and delete new profiles so the amount of havoc you can create in the CMS is minimal, though you're a nice person so you wouldn't be thinking that anyways. Right? Guys..?~~
 
 &nbsp;
 
